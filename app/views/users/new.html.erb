@@ -1,0 +1,29 @@
+
+<center>
+
+<link rel="stylesheet" href="form.css"/>
+  <h1>Bienvenue dans la création d'utilisateurs !</h1>
+
+   <form action="/new" method="post"> 
+      <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+   <div class='content'>  
+    
+ 
+      <p class="name">
+        <input name="username" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Username" id="name" />
+      </p>
+     
+      
+      <p class="text">
+        <textarea name="bio" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Balance ta bio"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" id="button-blue" name='envoyer'/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+  </div>

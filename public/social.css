@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {  
+  font-smoothing: antialiased;
+}
+
+/* Wrapper */
+.wrapper {
+  max-width: 960px;
+  margin: 65px auto 0;
+}
+
+/* Social Networks */
+h1 {
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0 0 60px 0;
+  font: 48px sans-serif;
+  color: rgba(19, 93, 129, 0.8);
+  text-shadow: 
+    0 1px #27bcf0, 
+    0 2px #26b6ec,
+    0 3px #27b4ed, 
+    0 4px #26b5eb,
+    0 5px #26b5eb
+}
+h1 span {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+h1 span:before,
+h1 span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: #26b6ec;
+  width: 99999px;
+}
+h1 span:before {
+  left: 100%;
+  margin-left: 20px;
+}
+h1 span:after {
+  right: 100%;
+  margin-right: 20px;
+}
+.list {
+  position: relative;
+  width: 470px;
+  margin: auto;
+}
+ul { 
+  list-style: none;
+  float: left;
+}
+ul li {
+  position: relative;
+  width: 80px; height: 40px;
+  float: left;
+}
+ul li a {
+  position: absolute;
+  width: 80px; height: 40px;
+  display: block;
+  background: #33322f;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+ul li a:after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  border: 40px solid transparent;
+  border-top: 0;
+  border-bottom: 40px solid #33322f;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  border: 40px solid transparent;
+  border-top: 40px solid #33322f;
+  border-bottom: 0;
+}
+ul li a:hover {
+  background: #000;
+}
+ul li a:hover:after {
+  border-bottom: 40px solid #000;
+}
+ul li a:hover:before {
+  border-top: 40px solid #000;
+}
+ul li:first-child:before {
+  content: "";
+  position: absolute; 
+  top: 10px; left: -30px;
+  border: 20px solid transparent;
+  border-top: 0;
+  border-bottom: 20px solid #33322f;
+  transform: rotate(-90deg);
+}
+ul li:last-child:after {
+  content: "";
+  position: absolute; 
+  top: 10px; right: -30px;
+  border: 20px solid transparent;
+  border-top: 0;
+  border-bottom: 20px solid #33322f;
+  transform: rotate(90deg);
+}
+ul li:first-child:hover:before, ul li:last-child:hover:after {
+  border-bottom: 20px solid #000;
+}
+
+/* Colors */
+.facebook:hover { color: #3f5598; }
+.twitter:hover { color: #3ac1f8; }
+.youtube:hover { color: #da2d2e; }
+.instagram:hover { color: #66269e; }
+.linkedin:hover { color: #1c66c2; }
